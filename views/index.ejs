@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>
+Calculator
+</title>
+
+</head>
+
+<body>
+<form action="calculate" method="post">
+Input 1:<input type="number" name="input1" id="input1" required="required"><br><br>
+Input 2:<input type ="number" name="input2" id="input2" required="required"><br><br>
+<input type="submit" value="+" name="calculate" id="addition">
+<input type="submit" value="-" name="calculate" id="subtract">
+<input type="submit" value="*" name="calculate" id="multiply">
+<input type="submit" value="/" name="calculate" id="divide">
+
+</form>
+<% if (typeof result !== "undefined") { %>
+  <h2><%= result%></h2>
+<% } %>
+</body>
+</html>
